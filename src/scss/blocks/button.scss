@@ -1,0 +1,251 @@
+.button {
+  display: inline-block;
+  background-color: $red;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  text-decoration: none;
+
+  &__delimiter {
+    width: 1px;
+    height: 100%;
+    background-color: $white;
+    opacity: 0.3;
+    margin: 0 12px;
+  }
+
+  &--cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 25px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &:hover {
+    background-color: darken($red, 2%);
+  }
+
+  &--black {
+    background-color: $black;
+
+    padding: 15px 35px;
+
+    &:hover {
+      background-color: lighten($color: $black, $amount: 15);
+    }
+  }
+
+  &--outline {
+    background-color: $white;
+    border-color: $red;
+
+    &,
+    span {
+      color: $red;
+    }
+
+    svg {
+      path {
+        fill: $red;
+      }
+    }
+
+    &:hover {
+      background-color: $red;
+
+      &,
+      span {
+        color: $white;
+      }
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  &--add {
+    svg {
+      margin-right: 7px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+
+    i {
+      display: inline-block;
+      border-radius: 999px;
+      background-color: $red;
+      color: $white;
+      font-weight: 700;
+      width: 17px;
+      height: 17px;
+      font-style: normal;
+      font-size: 11px;
+      line-height: 17px;
+      position: relative;
+    }
+
+    &:hover {
+      i {
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+
+  &.pay-btn {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    width: 210px;
+  }
+
+  &.go-back {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    border-color: $black;
+    opacity: 0.3;
+
+    svg {
+      margin-right: 20px;
+      transform: translateY(-1px);
+
+      path {
+        fill: transparent;
+        stroke-width: 2;
+      }
+    }
+
+    span {
+      font-weight: 400;
+      color: $black;
+    }
+
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+      opacity: 0.8;
+
+      span {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .button {
+    &--cart {
+      padding: 10px 22px;
+      font-size: 14px;
+    }
+
+    &--black {
+      padding: 10px 22px;
+      font-size: 14px;
+    }
+
+    &--circle {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+    }
+
+    &--add {
+      span {
+        font-size: 14px;
+      }
+    }
+
+    &.pay-btn {
+      font-size: 14px;
+      padding: 12px;
+      width: 180px;
+    }
+
+    &.go-back {
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .button {
+    &--cart {
+      font-size: 13px;
+      padding: 9px 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    &--cart {
+      font-size: 12px;
+      padding: 7px 16px;
+
+      svg {
+        max-width: 14px;
+        margin-right: 6px;
+      }
+    }
+
+    &__delimiter {
+      margin: 0 8px;
+    }
+
+    &--add {
+      &.go-back {
+        width: 45%;
+
+        svg {
+          margin-right: 6px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &.pay-btn {
+      padding: 15px 4px;
+      width: 45%;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

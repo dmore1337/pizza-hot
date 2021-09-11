@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap");
+
+@import "vars";
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color: $yellow;
+  font-size: 20px;
+  color: $black;
+  padding: 40px 0;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/content";
+@import "blocks/categories";
+@import "blocks/sort";
+@import "blocks/pizza-item";
+@import "blocks/cart";
+@import "blocks/footer";
+
+@media (max-width: 1200px) {
+  body {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 10px 0;
+  }
+}
+

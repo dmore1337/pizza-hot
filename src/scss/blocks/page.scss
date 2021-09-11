@@ -1,0 +1,88 @@
+.page {
+  background-color: $white;
+  max-width: $max-width;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  &__content {
+    .container {
+      margin: 40px auto;
+
+      &--cart {
+        max-width: 700px;
+      }
+
+      &--pizzas {
+        max-width: 1000px;
+        margin: 40px auto 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .page {
+    max-width: $max-width-laptop;
+
+    &__content {
+      .container {
+        &--cart {
+          margin: 20px auto;
+        }
+
+        &--pizzas {
+          margin: 20px 20px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    max-width: $max-width-tablet;
+
+    &__content {
+      .container {
+        &--cart {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    max-width: $max-width-mini-tablet;
+
+    &__content {
+      .container {
+        &--cart {
+          max-width: 440px;
+          margin: 0 10px 20px;
+        }
+
+        &--pizzas {
+          margin: 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    max-width: $max-width-mobile;
+
+    &__content {
+      .container {
+        &--cart {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}

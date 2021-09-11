@@ -1,0 +1,150 @@
+.footer {
+  padding: 40px 100px;
+  color: $dark-gray;
+  font-size: 16px;
+  border-top: 1px solid $gray;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__catalog {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $dark-gray;
+    margin-bottom: 8px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    &--links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+
+      a {
+        margin-top: 20px;
+        width: 32px;
+        height: 32px;
+
+        &:hover {
+          svg {
+            rect {
+              fill: darken($color: #f3f3f3, $amount: 2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__marketplaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      margin-right: 10px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 140px;
+      height: 45px;
+    }
+  }
+
+  &__email {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  &__devider {
+    width: 100px;
+    height: 3px;
+    background-color: $gray;
+    margin: 20px auto 0;
+  }
+
+  &__copyright {
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__catalog {
+      width: 33%;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      text-align: center;
+    }
+
+    &__social {
+      width: 100%;
+
+      &--links {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    &__marketplaces {
+      justify-content: center;
+    }
+
+    &__email {
+      margin: 20px auto 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    &__marketplaces {
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+}

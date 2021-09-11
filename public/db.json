@@ -1,0 +1,70 @@
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/6f4c956a88df491987053f799467a22d_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/bc585c01ce0f4472a95b23112d81bc2e_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/5334ade9cf834301834ad2d5a0ac73dc_584x584.jpeg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/636295e4fbce4e9dbde4953be708a0fb_584x584.jpeg", "https://dodopizza-a.akamaihd.net/static/Img/Products/f8dbfdf753b64b2785cced23ca9e6ecb_584x584.jpeg"]],
+      "name": "Колбаски Барбекю",
+      "description": "Острая чоризо, соус барбекю, томаты, красный лук, моцарелла, томатный соус",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [89, 119, 159],
+      "category": 3,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/814ad4a5-44bd-4b65-86e2-e6c04e622fda.jpg","https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/362468e7-e8d3-4fda-ab66-91f4dbd56122.jpg","https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/65f40f94-8181-4042-ae2c-10cd31c0a178.jpg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/eccca5ba-3931-4b70-a18c-1af0aa855a11.jpg", "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/5cb286ae-3252-4079-8f9b-64f910d44ba9.jpg"]],
+      "name": "Ветчина и сыр",
+      "description": "Ветчина, моцарелла, соус альфредо",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [89, 119, 159],
+      "category": 1,
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/75ffbce0345c4f61b5af463d69715d9a_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/dd4b719911d048e0b05c3e4219880e64_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/f10f35c8956d4c6aab004db613e674ff_584x584.jpeg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/5e4c38b6fe8649ce82acf820cc49ed87_584x584.jpeg", "https://dodopizza-a.akamaihd.net/static/Img/Products/c7acd8004f6947bd86935f0bc011bc6e_584x584.jpeg"]],
+      "name": "Двойной цыплёнок",
+      "description": "Цыпленок, моцарелла, соус альфредо",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [89, 119, 159],
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/21379561a76646f1945f1bc759c749b5_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/147c3814bbb34a77afdbc66e9ef20ed7_584x584.jpeg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/80a1f29cb1f7432581778d466725e0bf_584x584.jpeg", "https://dodopizza-a.akamaihd.net/static/Img/Products/ab33bf72e7a644a0ae09584986ed3c1b_584x584.jpeg"]],
+      "name": "Маргарита",
+      "description": "Увеличенная порция моцареллы, томаты, итальянские травы, томатный соус",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [89, 119, 159],
+      "category": 2,
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/09c99aa8d6864255af7850f0f3b3df6b_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/ebf8b8670d6b4f078d9afa616d01202a_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/7b43ac59d9854ab697993689392c08e6_584x584.jpeg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/d7ac4a43d1704b3fae009b7626d7abb3_584x584.jpeg", "https://dodopizza-a.akamaihd.net/static/Img/Products/bed43c2c19574c21a44d2ec44255bde6_584x584.jpeg"]],
+      "name": "Сырная",
+      "description": "Моцарелла, сыры чеддер и пармезан, соус альфредо",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [89, 119, 159],
+      "category": 2,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": [["https://dodopizza-a.akamaihd.net/static/Img/Products/69f94add422140388b08ba91fd81d97a_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/f35b77ffb87d4fff8c06dc27320278bf_584x584.jpeg","https://dodopizza-a.akamaihd.net/static/Img/Products/58aa2074e53d458f880f5a5fb074e563_584x584.jpeg"], ["","https://dodopizza-a.akamaihd.net/static/Img/Products/2da57e9752314afe85692374c2eb3919_584x584.jpeg", "https://dodopizza-a.akamaihd.net/static/Img/Products/da0913ce24654bbfad81533f64f00b2e_584x584.jpeg"]],
+      "name": "Фристайло",
+      "description": "Томаты, сладкий перец, красный лук, соус песто, митболы из говядины, моцарелла, томатный соус",
+      "sizes": [[26, 30, 40], [26, 30, 40]],
+      "types": [[0], [0, 1], [0, 1]],
+      "price": [99, 119, 159],
+      "category": 1,
+      "rating": 5
+    }
+  ]
+}

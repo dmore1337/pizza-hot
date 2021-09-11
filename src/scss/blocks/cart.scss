@@ -1,0 +1,463 @@
+.cart {
+  &--empty {
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      color: $dark-gray;
+    }
+
+    icon {
+      position: relative;
+      top: 2px;
+    }
+
+    img {
+      display: block;
+      width: 300px;
+      margin: 45px auto 60px;
+    }
+  }
+
+  &__section,
+  &__item {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 20px;
+  }
+
+  &__section {
+    &.top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        display: flex;
+        flex-direction: row;
+        font-size: 36px;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+
+        svg {
+          position: relative;
+          top: -2px;
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  &__clear {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: $black;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+
+    &-img {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      width: 15%;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35%;
+      font-size: 18px;
+
+      h3 {
+        font-weight: 700;
+      }
+
+      p {
+        color: $dark-gray;
+      }
+    }
+
+    &-count {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 15%;
+
+      b {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 15px;
+      }
+    }
+
+    &-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 22px;
+      width: 30%;
+    }
+
+    &-remove {
+      width: 5%;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        transform: rotate(45deg);
+
+        path {
+          fill: $black;
+        }
+      }
+
+      .button {
+        border-color: $black;
+        opacity: 0.3;
+
+        &:hover {
+          background-color: $black;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-details,
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-details {
+      font-size: 22px;
+    }
+
+    &-buttons {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    &--empty {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      icon {
+        font-size: 24px;
+      }
+
+      img {
+        width: 240px;
+      }
+    }
+
+    &__section {
+      &.top {
+        h2 {
+          font-size: 28px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &__clear {
+      font-size: 14px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__item {
+      &-img {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      &-info {
+        font-size: 16px;
+      }
+
+      &-count {
+        b {
+          font-size: 20px;
+        }
+      }
+
+      &-price {
+        font-size: 18px;
+      }
+    }
+
+    &__bottom {
+      &-details {
+        font-size: 18px;
+      }
+
+      &-buttons {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cart {
+    &--empty {
+      padding: 10px 0 20px;
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      icon {
+        font-size: 20px;
+      }
+    }
+
+    &__section,
+    &__item {
+      padding: 10px 0;
+    }
+
+    &__section {
+      &.top {
+        h2 {
+          font-size: 24px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    &__clear {
+      font-size: 13px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &__item {
+      &-img {
+        width: 16%;
+      }
+
+      &-info {
+        width: 37%;
+        h3 {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+
+      &-count {
+        width: 20%;
+        b {
+          font-size: 18px;
+          margin: 0 8px;
+        }
+      }
+
+      &-price {
+        font-size: 16px;
+        width: 20%;
+      }
+
+      &-remove {
+        width: 7%;
+      }
+    }
+
+    &__bottom {
+      margin-top: 10px;
+
+      &-details {
+        font-size: 16px;
+      }
+
+      &-buttons {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cart {
+    &--empty {
+      padding: 10px 0 0;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      icon {
+        font-size: 18px;
+        top: 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      img {
+        margin: 30px auto 40px;
+      }
+    }
+    &__section,
+    &__item {
+      padding: 8px 0;
+    }
+
+    &__section {
+      &.top {
+        h2 {
+          font-size: 22px;
+
+          svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+
+    &__clear {
+      svg {
+        margin-right: 6px;
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+
+      &-img {
+        width: 100%;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &-info {
+        width: 100%;
+        h3 {
+          font-size: 13px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      &-count {
+        width: 100%;
+        b {
+          font-size: 16px;
+        }
+      }
+
+      &-price {
+        width: 70%;
+        font-size: 16px;
+      }
+
+      &-remove {
+        grid-column: 3/4;
+        margin-left: 50px;
+      }
+    }
+
+    &__bottom {
+      &-details {
+        font-size: 14px;
+      }
+
+      &-buttons {
+        margin-top: 10px;
+      }
+    }
+  }
+}
